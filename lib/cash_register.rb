@@ -29,5 +29,11 @@ class CashRegister
     return "After the discount, the total comes to $#{@total.to_s.chomp("0")}"
   end
   
+  def items
+    @cart
+  end
   
+  def void_last_transaction
+    self.total -= self.current_transaction_amt
+  end
 end
