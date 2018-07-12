@@ -24,7 +24,9 @@ class CashRegister
     if @discount == 0 
       return "No discount"
     end
-    discount = (@total *)
+    discount = (@total * @discount/100.0)
+    @total = @total - discount 
   end
+  
   
 end
