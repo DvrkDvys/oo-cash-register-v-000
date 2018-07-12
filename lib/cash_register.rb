@@ -26,7 +26,7 @@ class CashRegister
     end
     discount = (@total * @discount/100.0)
     @total = @total - discount 
-    puts
+    puts "After the discount, the total comes to $#{@total.to_s.chomp("0")}"
   end
   
   
