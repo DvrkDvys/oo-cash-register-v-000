@@ -26,6 +26,7 @@ class CashRegister
     end
     discount = (@total * @discount/100.0)
     @total = @total - discount 
+    puts
   end
   
   
