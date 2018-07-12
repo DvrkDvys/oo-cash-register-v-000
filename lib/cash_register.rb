@@ -17,7 +17,7 @@ class CashRegister
     for i in 1..quantity do 
       self.cart << title
     end
-    binding.pry
+    # binding.pry
   end
 
   def apply_discount
