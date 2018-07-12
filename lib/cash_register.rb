@@ -10,3 +10,6 @@ class CashRegister
     @discount = discount
     @cart = []
   end
+  
+  
+end
